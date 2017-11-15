@@ -9,181 +9,91 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
-
-        body {
-            margin: 0;
-            padding: 0;
+        .image-float {
+            max-width: 300px;
         }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            line-height: 50px;
-            font-size: 48px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: blue;
-            margin-top: 150px;
-            margin-left: 20Px;
-            margin-bottom: 20px;
-            margin-right: 20px;
+        .image-float--img {
         }
 
-        h2 {
-            font-family: times;
-            font-size: 100px;
-            color: pink;
+        .multiple-floats, .centering {
+            max-width: 300px;
+            background-color: aliceblue;
         }
 
-        p {
-            font-family: times;
-            font-size: 50px;
-            color: black;
+        .div {
+            width: 120px;
+            height: 120px;
         }
 
-        .div1 {
-            width: 350px;
-            padding: 20px 20px 50px 20px;
-            margin: 30px 20px 30px 20px;
+        .multiple-floats .div1 {
+            background-color: #6ba0c8;
         }
 
-        .container {
+        .multiple-floats .div2 {
+            background-color: #6bc857;
+        }
+
+        .multiple-floats .div3 {
+            background-color: #a77dc8;
+        }
+
+        .centering .div1 {
+            background-color: #6ba0c8;
+            text-align: center;
+
+            /* Only works with inline-elements and table cells */
+            vertical-align: text-bottom;
+        }
+
+        .centering .div2 {
+            background-color: #6bc857;
+            text-align: center;
+
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .centering .div3 {
+            background-color: #a77dc8;
+
+            /* FLEXBOX to the rescue! */
             display: flex;
-            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
         }
-
-        .menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #0922ec;
-            width: 100%;
-            padding: 20px 20px;
-        }
-
-        .menutext {
-            font-family: arial;
-            font-size: 16px;
-            color: white;
-        }
-
-        .navlink {
-            margin-right: 40px;
-        }
-
-        .navfont {
-            letter-spacing: 2px;
-            font-size: 10px;
-        }
-
-        .subheader {
-            font-family: arial;
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 1px
-        }
-
-        a:link {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: white;
-        }
-
-        a:hover {
-            color: white;
-        }
-
-
     </style>
 
 </head>
 <body>
 
-<div class="menu menutext">
-    <div>
-        <a class="navlink navfont" href="#Services">SERVICES</a>
-        <a class="navlink navfont" href="#Portfolio">PORTFOLIO</a>
-        <a class="navlink navfont" href="#Culture">CULTURE</a>
-        <a class="navlink navfont" href="https://career.axelspringer.com/jobangebote/" target="_blank">WORK WITH ME</a>
-    </div>
-</div>
+<h1>Float</h1>
 
-<div class="container">
-    <iframe src="https://giphy.com/embed/3o6Yg063yIbA7HWehG" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    <p><a href="https://giphy.com/gifs/studiosoriginals-3o6Yg063yIbA7HWehG">via GIPHY</a></p>
-    <iframe src="https://giphy.com/embed/3o6Ygg47I4bOxV7y9i" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    <p><a href="https://giphy.com/gifs/studiosoriginals-3o6Ygg47I4bOxV7y9i">via GIPHY</a></p>
-    <iframe src="https://giphy.com/embed/26gINZqQwFY8kjjva" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    <p><a href="https://giphy.com/gifs/studiosoriginals-26gINZqQwFY8kjjva">via GIPHY</a></p>
-</div>
+<h2>Text Float</h2>
 
-
-<h1>Searches, notifications and emoji: What data reveals about people</h1>
-
-
-<div class="container">
-    <div class="div1">
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150"></a>
-        <span class="subheader">HUMAN CENTERED DESIGN</span>
-        <span class="subheader"> I </span>
-        <span class="subheader">10 MIN READ</span>
-    </div>
-    <div class="div1">
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150"></a>
-        <span class="subheader">THE POWER OF EMOJIS</span>
-        <span class="subheader"> I </span>
-        <span class="subheader">15 MIN READ</span>
-    </div>
-    <div class="div1">
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150"></a>
-        <span class="subheader">CONVERSATIONAL INTERFACES</span>
-        <span class="subheader"> I </span>
-        <span class="subheader">7 MIN READ</span>
-    </div>
-</div>
-
-
-<div>
-    <h1 id="Services"><i class="fa fa-hand-peace-o" aria-hidden="true"></i> Services <i class="fa fa-hand-peace-o" aria-hidden="true"></i></h1>
-    <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-        est Lorem ipsum dolor sit amet.
+<div class="image-float">
+    <p class="image-float--paragraph">
+        <img class="image-float--img" src="//via.placeholder.com/100x100">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
     </p>
 </div>
 
-<div>
-    <h1 id="Portfolio"><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Portfolio <i class="fa fa-hand-spock-o" aria-hidden="true"></i></h1>
-    <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-        est Lorem ipsum dolor sit amet.
-    </p>
+<h2>Multiple Blocks</h2>
+
+<div class="multiple-floats">
+    <div class="div div1">1</div>
+    <div class="div div2">&nbsp;&nbsp;2</div>
+    <div class="div div3">&nbsp;&nbsp;&nbsp;&nbsp;3</div>
 </div>
 
-<div>
-    <h1 id="Culture"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i> Culture <i class="fa fa-hand-scissors-o" aria-hidden="true"></i></h1>
-    <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-        et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-        est Lorem ipsum dolor sit amet.
-    </p>
-</div>
+<h1>Centering</h1>
+<h2>Text</h2>
 
+<div class="centering">
+    <div class="div div1">1</div>
+    <div class="div div2">2</div>
+    <div class="div div3">3</div>
+</div>
 
 </body>
 </html>
