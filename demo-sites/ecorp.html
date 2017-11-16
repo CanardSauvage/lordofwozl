@@ -5,6 +5,70 @@
     <title>eCorp</title>
 
     <style type="text/css">
+        body, html {
+            margin: 0;
+            padding: 0;
+
+            /* GLOBAL rem / em */
+            font-size: 16px;
+
+            /* FONT */
+            color: white;
+            font-family: Courier, monospace;
+        }
+
+        .row--menu {
+            background: #032f45;
+        }
+
+        .full-screen-size {
+        }
+
+        .row--blue {
+            background-color: #0066cc;
+        }
+
+        .row--logo {
+        }
+
+        .row--dark-blue {
+            background: #032f45;
+        }
+
+        .row--dark-blue p {
+        }
+
+        .button {
+            background: #58cb79;
+            box-shadow: inset 0px 1px 0px #a1e6b5, inset 0 -1px 2px #3d9a58;
+        }
+
+        .call-to-action {
+        }
+
+        .row--full-image {
+        }
+
+        .slogan-left, .slogan-right {
+            background: rgba(0, 102, 204, 0.8);
+        }
+
+        .slogan-right {
+        }
+
+        .slogan-left {
+        }
+
+        .row--video {
+        }
+
+        .row--video iframe {
+        }
+
+        .row--footer {
+            background: black;
+        }
+
     </style>
 </head>
 
@@ -12,63 +76,77 @@
 
 <div class="page-wrapper">
 
-    <div class="one-screen">
-        <div class="blue-head blue-header--logo">eCorp</div>
-        <div class="slogan-right">Für alle, die täglich Spass an Bösartigkeit haben</div>
-        <div class="call-to-action">Zum eCorp Shop</div>
-        <div class="full-image">
-            <img src="//img00.deviantart.net/9bb7/i/2007/100/9/6/evil_corporation_by_ivanandreevich.jpg"/>
+    <div class="row--menu">
+        <a href="#home">Home</a> |
+        <a href="#products">Produkte</a> |
+        <a href="#quality">Qualität</a> |
+        <a href="#safety">Sicherheit</a> |
+        <a href="#videos">Referenzen</a> |
+        <a href="#cookies">Über uns</a>
+    </div>
+
+    <!-- Screen 1: Home -->
+    <div class="full-screen-size" id="home">
+        <div class="row--blue row--logo">eCorp</div>
+        <div class="row--full-image" style="background-image: url('//img00.deviantart.net/9bb7/i/2007/100/9/6/evil_corporation_by_ivanandreevich.jpg')">
+            <div class="slogan-right">Für alle, die täglich Spass an Bösartigkeit haben</div>
+            <div class="button call-to-action">Zum eCorp Shop</div>
         </div>
     </div>
 
-    <div class="one-screen">
-        <div class="blue-head">Egal ob Groß oder Klein, Jung oder Alt, Sommer oder Winter:
+    <!-- Screen 2: Produkte -->
+    <div class="full-screen-size" id="products">
+        <div class="row--blue">Egal ob Groß oder Klein, Jung oder Alt, Sommer oder Winter:
             Mit HUDORA wird täglicher Spaß an Bewegung zum Kinderspiel.
         </div>
-        <div class="slogan-left">Für vielfalt</div>
-        <div class="dark-blue-foot">
-            <p>Mit über 400 HUDORA Produkten wird es zu keiner Jahreszeit langweilig - egal ob mit der Familie oder mit Freunden.</p>
+        <div class="row--full-image" style="background-image: url('//illustratorslounge.com/wp-content/uploads/a-large-evil-corporation-03.png')">
+            <div class="slogan-left">Für Vielfalt</div>
         </div>
-        <div class="full-image">
-            <img src="//illustratorslounge.com/wp-content/uploads/a-large-evil-corporation-03.png"/>
+        <div class="row--dark-blue">
+            <p>Mit über 400 eCorp Produkten wird es zu keiner Jahreszeit langweilig - egal ob mit der Familie oder mit Freunden.</p>
         </div>
     </div>
 
-    <div class="one-screen">
-        <div class="slogan-right">Für qualität</div>
-        <div class="dark-blue-foot">
+    <!-- Screen 3: Qualität-->
+    <div class="full-screen-size" id="quality">
+        <div class="row--full-image" style="background-image: url('//i.ytimg.com/vi/O79PfO7slLE/maxresdefault.jpg')">
+            <div class="slogan-right">Für qualität</div>
+        </div>
+        <div class="row--dark-blue">
             <p>Vier Generationen Pioniergeist und Erfahrung machen HUDORA zu einem der führenden Hersteller für hochwertige Sport- und Freizeitartikel.</p>
         </div>
-        <div class="full-image">
-            <img src="//i.ytimg.com/vi/O79PfO7slLE/maxresdefault.jpg"/>
+    </div>
+
+    <!-- Screen 4: Sicherheit -->
+    <div class="full-screen-size" id="safety">
+        <div class="row--full-image" style="background-image: url('//www.subtraction.com/wp-content/uploads/2014/09/2014-09-25-evil-corp-hot-fuzz-725x407.jpg')">
+            <div class="slogan-left">Für sicherheit</div>
+        </div>
+        <div class="row--dark-blue">
+            <p>Alle eCorp Produkte werden in enger Zusammenarbeit mit renommierten Prüfinstituten nach höchsten Sicherheitsstandards entwickelt und gefertigt.</p>
         </div>
     </div>
 
-    <div class="one-screen">
-        <div class="slogan-left">Für sicherheit</div>
-        <div class="dark-blue-foot">
-            <p>Alle HUDORA Produkte werden in enger Zusammenarbeit mit renommierten Prüfinstituten nach höchsten Sicherheitsstandards entwickelt und gefertigt.</p>
+    <!-- Screen 5: Videos -->
+    <div class="full-screen-size" id="videos">
+        <div class="row--blue">
+            <div class="button">Alle eCorp Produkte entdecken</div>
         </div>
-        <div class="full-image">
-            <img src="//www.subtraction.com/wp-content/uploads/2014/09/2014-09-25-evil-corp-hot-fuzz-725x407.jpg"/>
-        </div>
-    </div>
-
-
-    <div class="one-screen">
-        <div class="blue-head">
-            <div class="call-to-action">Alle eCorp Produkte entdecken</div>
-        </div>
-        <div class="video">
+        <div class="row--video">
             <iframe src="https://www.youtube.com/embed/GUdyqU6FnIY?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" gesture="media" allowfullscreen></iframe>
         </div>
+    </div>
 
-        <div class="full-image">
-            <img src="//static.pexels.com/photos/175032/pexels-photo-175032.jpeg"/>
+    <div class="full-screen-size" id="cookies">
+        <div class="row--full-image" style="background-image: url('//static.pexels.com/photos/175032/pexels-photo-175032.jpeg')">
         </div>
-        <div class="dark-blue-foot">
-            <div class="center">Kunden-Hotline: xxx 123 1234</div>
+        <div class="row--blue">
+            <p>Come to us. We have cookies.</p>
         </div>
+    </div>
+
+    <div class="row--footer">
+        <div>Kunden-Hotline: xxx 123 1234</div>
     </div>
 </div>
 
