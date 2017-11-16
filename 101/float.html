@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>LordOfWozl's First Project</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        .image-float {
+            max-width: 300px;
+        }
+
+        .image-float--img {
+        }
+
+        .multiple-floats, .centering {
+            max-width: 300px;
+            background-color: aliceblue;
+        }
+
+        .div {
+            width: 120px;
+            height: 120px;
+        }
+
+        .multiple-floats .div1 {
+            background-color: #6ba0c8;
+        }
+
+        .multiple-floats .div2 {
+            background-color: #6bc857;
+        }
+
+        .multiple-floats .div3 {
+            background-color: #a77dc8;
+        }
+
+        .centering .div1 {
+            background-color: #6ba0c8;
+            text-align: center;
+
+            /* Only works with inline-elements and table cells */
+            vertical-align: text-bottom;
+        }
+
+        .centering .div2 {
+            background-color: #6bc857;
+            text-align: center;
+
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .centering .div3 {
+            background-color: #a77dc8;
+
+            /* FLEXBOX to the rescue! */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Float</h1>
+
+<h2>Text Float</h2>
+
+<div class="image-float">
+    <p class="image-float--paragraph">
+        <img class="image-float--img" src="//via.placeholder.com/100x100">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+</div>
+
+<h2>Multiple Blocks</h2>
+
+<div class="multiple-floats">
+    <div class="div div1">1</div>
+    <div class="div div2">&nbsp;&nbsp;2</div>
+    <div class="div div3">&nbsp;&nbsp;&nbsp;&nbsp;3</div>
+</div>
+
+<h1>Centering</h1>
+<h2>Text</h2>
+
+<div class="centering">
+    <div class="div div1">1</div>
+    <div class="div div2">2</div>
+    <div class="div div3">3</div>
+</div>
+
+</body>
+</html>
