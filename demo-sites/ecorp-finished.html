@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de-DE" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <title>eCorp</title>
+
+    <style type="text/css">
+        body, html {
+            margin: 0;
+            padding: 0;
+
+            /* GLOBAL rem / em */
+            font-size: 16px;
+
+            /* FONT */
+            color: white;
+            font-family: Courier, monospace;
+        }
+
+        a {
+            display: inline-block;
+            color: white;
+            padding: 8px;
+        }
+
+        a:hover {
+            color: #cecece;
+        }
+
+        .row--menu {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            background: #032f45;
+        }
+
+        .full-screen-size {
+            height: 100vh;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .row--blue {
+            flex: 0 0 120px;
+            width: 100%;
+            background-color: #0066cc;
+            margin: auto;
+
+            /* CENTER CENTER */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            /* FONT */
+            font-size: 1.6rem;
+        }
+
+        .row--logo {
+            margin-top: 34px;
+            flex: 0 0 80px;
+            font-size: 2rem;
+        }
+
+        .row--dark-blue {
+            flex: 0 0 120px;
+            min-height: 120px;
+            background: #032f45;
+
+            /* CENTER CENTER */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .row--dark-blue p {
+            max-width: 80%;
+            text-align: right;
+            color: white;
+            font-size: 1.4rem;
+            padding: 0 30px;
+        }
+
+        .button {
+            padding: 12px 36px;
+            min-width: 200px;
+            background: #58cb79;
+
+            border-radius: 7px;
+            box-shadow: inset 0px 1px 0px #a1e6b5, inset 0 -1px 2px #3d9a58;
+
+            /* FONT */
+            font-size: 1.5rem;
+        }
+
+        .call-to-action {
+            position: absolute;
+            bottom: 10%;
+
+        }
+
+        .row--full-image {
+            flex: 1 1 auto;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slogan-left, .slogan-right {
+            min-width: 300px;
+            width: 25%;
+            max-width: 500px;
+            padding: 18px;
+
+            position: absolute;
+
+            text-transform: uppercase;
+            background: rgba(0, 102, 204, 0.8);
+            font-size: 2.0rem;
+        }
+
+        .slogan-right {
+            right: 0;
+            text-align: right;
+        }
+
+        .slogan-left {
+            left: 0;
+        }
+
+        .row--video {
+            position: relative;
+            flex: 1 1 auto;
+        }
+
+        .row--video iframe {
+            position: absolute;
+            height: 100%;
+            min-width: 100%;
+        }
+
+        .row--footer {
+            padding: 80px 0;
+            background: black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <div class="row--menu">
+        <a href="#home">Home</a> |
+        <a href="#products">Produkte</a> |
+        <a href="#quality">Qualität</a> |
+        <a href="#safety">Sicherheit</a> |
+        <a href="#videos">Referenzen</a> |
+        <a href="#cookies">Über uns</a>
+    </div>
+
+    <!-- Screen 1: Home -->
+    <div class="full-screen-size" id="home">
+        <div class="row--blue row--logo">eCorp</div>
+        <div class="row--full-image" style="background-image: url('//img00.deviantart.net/9bb7/i/2007/100/9/6/evil_corporation_by_ivanandreevich.jpg')">
+            <div class="slogan-right">Für alle, die täglich Spass an Bösartigkeit haben</div>
+            <div class="button call-to-action">Zum eCorp Shop</div>
+        </div>
+    </div>
+
+    <!-- Screen 2: Produkte -->
+    <div class="full-screen-size" id="products">
+        <div class="row--blue">Egal ob Groß oder Klein, Jung oder Alt, Sommer oder Winter:
+            Mit HUDORA wird täglicher Spaß an Bewegung zum Kinderspiel.
+        </div>
+        <div class="row--full-image" style="background-image: url('//illustratorslounge.com/wp-content/uploads/a-large-evil-corporation-03.png')">
+            <div class="slogan-left">Für Vielfalt</div>
+        </div>
+        <div class="row--dark-blue">
+            <p>Mit über 400 eCorp Produkten wird es zu keiner Jahreszeit langweilig - egal ob mit der Familie oder mit Freunden.</p>
+        </div>
+    </div>
+
+    <!-- Screen 3: Qualität-->
+    <div class="full-screen-size" id="quality">
+        <div class="row--full-image" style="background-image: url('//i.ytimg.com/vi/O79PfO7slLE/maxresdefault.jpg')">
+            <div class="slogan-right">Für qualität</div>
+        </div>
+        <div class="row--dark-blue">
+            <p>Vier Generationen Pioniergeist und Erfahrung machen HUDORA zu einem der führenden Hersteller für hochwertige Sport- und Freizeitartikel.</p>
+        </div>
+    </div>
+
+    <!-- Screen 4: Sicherheit -->
+    <div class="full-screen-size" id="safety">
+        <div class="row--full-image" style="background-image: url('//www.subtraction.com/wp-content/uploads/2014/09/2014-09-25-evil-corp-hot-fuzz-725x407.jpg')">
+            <div class="slogan-left">Für sicherheit</div>
+        </div>
+        <div class="row--dark-blue">
+            <p>Alle eCorp Produkte werden in enger Zusammenarbeit mit renommierten Prüfinstituten nach höchsten Sicherheitsstandards entwickelt und gefertigt.</p>
+        </div>
+    </div>
+
+    <!-- Screen 5: Videos -->
+    <div class="full-screen-size" id="videos">
+        <div class="row--blue">
+            <div class="button">Alle eCorp Produkte entdecken</div>
+        </div>
+        <div class="row--video">
+            <iframe src="https://www.youtube.com/embed/GUdyqU6FnIY?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="full-screen-size" id="cookies">
+        <div class="row--full-image" style="background-image: url('//static.pexels.com/photos/175032/pexels-photo-175032.jpeg')">
+        </div>
+        <div class="row--blue">
+            <p>Come to us. We have cookies.</p>
+        </div>
+    </div>
+
+    <div class="row--footer">
+        <div>Kunden-Hotline: xxx 123 1234</div>
+    </div>
+</div>
+
+</body>
+</html>
